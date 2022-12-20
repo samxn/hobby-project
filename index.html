@@ -5,41 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crochet - My Hobby</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgba(216, 241, 230, 0.46) 0.1%,
+          rgba(233, 226, 226, 0.28) 90.1%
+        );
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid pink;
+        background-color: white;
+        font-size: 20px;
+        border-radius: 4px;
+        padding: 10px 10px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background-color: pink;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+      }
+      .container {
+        margin: 20px 300px;
+        max-width: 100%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .theme-btn {
+        background-color: black;
+        color: white;
+        transition: all 150ms ease-in-out;
+      }
+      .theme-btn:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
   </head>
   <body>
-    <button>Dark Theme</button>
-    <h1>Crochet</h1>
-    <h2>An interesting hobby</h2>
-    <a href="https://en.wikipedia.org/wiki/Crochet" target="_blank">
+    <button class="theme-btn">Dark Theme</button>
+    <div class="container">
+      <h1>Crochet</h1>
+      <h2>An interesting hobby</h2>
+      <a href="https://en.wikipedia.org/wiki/Crochet" target="_blank">
+        <img
+          src="https://images.unsplash.com/photo-1670764732277-6965323e52dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+          alt="Crochet "
+      /></a>
       <img
-        src="https://images.unsplash.com/photo-1670764732277-6965323e52dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-        alt="Crochet "
-    /></a>
-    <img
-      src="https://cdn.shopify.com/s/files/1/0832/3597/products/OL_H1773_800x.jpg?v=1623945038"
-      alt="Crochet dress"
-    />
-    <img
-      src="https://cdn.shopify.com/s/files/1/0013/6714/6599/products/GypsyDress1_800x.png?v=1611407249"
-      alt="Crochet dress"
-    />
+        src="https://cdn.shopify.com/s/files/1/0832/3597/products/OL_H1773_800x.jpg?v=1623945038"
+        alt="Crochet dress"
+      />
+      <img
+        src="https://cdn.shopify.com/s/files/1/0013/6714/6599/products/GypsyDress1_800x.png?v=1611407249"
+        alt="Crochet dress"
+      />
 
-    <img
-      src="https://images.unsplash.com/photo-1632856284301-fe58ff4d0453?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=519&q=80"
-      alt="Crochet"
-    />
-    <img
-      src="https://m.media-amazon.com/images/I/61933myGriL._AC_UY1000_.jpg"
-      alt="Crochet leg warmer"
-    />
+      <img
+        src="https://images.unsplash.com/photo-1632856284301-fe58ff4d0453?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=519&q=80"
+        alt="Crochet"
+      />
+      <img
+        src="https://m.media-amazon.com/images/I/61933myGriL._AC_UY1000_.jpg"
+        alt="Crochet leg warmer"
+      />
 
-    <p>
-      Crochet is a process of creating textiles by using a crochet hook to
-      interlock loops of yarn, thread, or strands of other materials. The name
-      is derived from the French term crochet, meaning 'hook'. Hooks can be made
-      from a variety of materials, such as metal, wood, bamboo, or plastic.
-    </p>
-    <button>Learn Crochet</button>
+      <p>
+        Crochet is a process of creating textiles by using a crochet hook to
+        interlock loops of yarn, thread, or strands of other materials. The name
+        is derived from the French term crochet, meaning 'hook'. Hooks can be
+        made from a variety of materials, such as metal, wood, bamboo, or
+        plastic.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Crochet" target="_blank">
+          Read more on Wikipedia</a
+        >
+      </p>
+      <button>Learn Crochet</button>
+    </div>
     <footer>
       <a href="https://github.com/samxn/hobby-project" target="_blank"
         >Open-Source Code</a
