@@ -42,6 +42,10 @@
         text-align: center;
         margin: 10px 0;
       }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
       .container {
         margin: 20px 300px;
         max-width: 100%;
@@ -61,10 +65,20 @@
       .crochet-intro-pic {
         border-radius: 10px;
         transition: all 150ms ease-in-out;
+        padding-bottom: 5px;
       }
       .crochet-intro-pic:hover {
         filter: contrast(80%);
         transform: scale(1.1);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -72,30 +86,32 @@
     <button class="theme-btn">Dark Theme</button>
     <div class="container">
       <h1>Crochet</h1>
-      <h2>An interesting hobby</h2>
+      <h2>A fun hobby</h2>
       <a href="https://en.wikipedia.org/wiki/Crochet" target="_blank">
         <img
           src="https://images.unsplash.com/photo-1670764732277-6965323e52dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
           alt="Crochet"
           class="crochet-intro-pic"
       /></a>
-      <img
-        src="https://cdn.shopify.com/s/files/1/0832/3597/products/OL_H1773_800x.jpg?v=1623945038"
-        alt="Crochet dress"
-      />
-      <img
-        src="https://cdn.shopify.com/s/files/1/0013/6714/6599/products/GypsyDress1_800x.png?v=1611407249"
-        alt="Crochet dress"
-      />
+      <div class="grid">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0832/3597/products/OL_H1773_800x.jpg?v=1623945038"
+          alt="Crochet dress"
+        />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0832/3597/products/OL_H4688_2102x.jpg?v=1632953663"
+          alt="Crochet dress"
+        />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0013/6714/6599/products/GypsyDress1_800x.png?v=1611407249"
+          alt="Crochet dress"
+        />
 
-      <img
-        src="https://images.unsplash.com/photo-1632856284301-fe58ff4d0453?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=519&q=80"
-        alt="Crochet"
-      />
-      <img
-        src="https://m.media-amazon.com/images/I/61933myGriL._AC_UY1000_.jpg"
-        alt="Crochet leg warmer"
-      />
+        <img
+          src="https://cdn.shopify.com/s/files/1/0832/3597/products/HQ9A0508copy_1024x.jpg?v=1634084171"
+          alt="Crochet dress"
+        />
+      </div>
 
       <p>
         Crochet is a process of creating textiles by using a crochet hook to
