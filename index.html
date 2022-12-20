@@ -7,11 +7,7 @@
     <title>Crochet - My Hobby</title>
     <style>
       body {
-        background: radial-gradient(
-          circle at 10% 20%,
-          rgba(216, 241, 230, 0.46) 0.1%,
-          rgba(233, 226, 226, 0.28) 90.1%
-        );
+        background-color: #cfc1b1;
       }
       h1 {
         text-align: center;
@@ -27,7 +23,7 @@
       button {
         display: block;
         margin: 0 auto;
-        border: 1px solid pink;
+        border: 1px solid #cfc1b1;
         background-color: white;
         font-size: 20px;
         border-radius: 4px;
@@ -35,7 +31,7 @@
         transition: all 150ms ease-in-out;
       }
       button:hover {
-        background-color: pink;
+        background-color: #cfc1b1;
         cursor: pointer;
       }
       footer {
@@ -79,11 +75,30 @@
       .grid img {
         width: 100%;
         border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.5);
+      }
+
+      .dark {
+        background-color: black;
+        color: white;
+      }
+      .dark a {
+        color: white;
+      }
+      .dark .container {
+        background-color: rgb(73, 73, 73);
+        color: black;
+      }
+      .dark .container a {
+        color: black;
       }
     </style>
   </head>
   <body>
-    <button class="theme-btn">Dark Theme</button>
+    <button class="theme-btn">Change Theme</button>
     <div class="container">
       <h1>Crochet</h1>
       <h2>A fun hobby</h2>
@@ -133,5 +148,18 @@
       >
       by Samin Dizna
     </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-btn");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
